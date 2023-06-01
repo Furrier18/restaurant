@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: web
-          path: web/target/data-0.1.0.jar
+          path: web/target/web-0.1.0.jar
 
       - name: Archiving Artifact Service
         uses: actions/upload-artifact@v3
@@ -42,4 +42,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: data
-          path: data/target/web-0.1.0.jar
+          path: data/target/data-0.1.0.jar
