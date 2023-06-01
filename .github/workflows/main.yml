@@ -1,33 +1,27 @@
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+name: Node CI
 
-name: Simple CI/CD Pipeline
-
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
-  build:
+  build_and_test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Set up JDK 17
-        uses: actions/setup-java@v2
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: npm install, build, and test
+        run: |
+          npm install
+          npm run build --if-present
+          npm test
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
         with:
-          java-version: '17'
-          distribution: 'temurin'
-          cache: maven
-
-      - name: Build with Maven
-        run: mvn clean install
-
-      - name: Archive artifacts
-        uses: actions/upload-artifact@v2
+          name: dist-without-markdown
+          path: |
+            dist
+            !dist/**/*.md
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3
         with:
-          name: app
-          path: target/web-0.1.0.jar
+          name: code-coverage-report
+          path: output/test/code-coverage.html
