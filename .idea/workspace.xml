@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16f53c8b-fbc7-409c-a16f-8f40431f8d65" name="Changes" comment="V 1.0 hibajav">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+    <list default="true" id="16f53c8b-fbc7-409c-a16f-8f40431f8d65" name="Changes" comment="V 1.0.1 hibajav">
+      <change beforePath="$PROJECT_DIR$/data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685579833844</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="V 1.0.1 hibajav">
+      <created>1685579896268</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1685579896268</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,7 +246,8 @@
     <MESSAGE value="CI / CD pipeline HIBAJAV" />
     <MESSAGE value="V 1.0" />
     <MESSAGE value="V 1.0 hibajav" />
-    <option name="LAST_COMMIT_MESSAGE" value="V 1.0 hibajav" />
+    <MESSAGE value="V 1.0.1 hibajav" />
+    <option name="LAST_COMMIT_MESSAGE" value="V 1.0.1 hibajav" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
