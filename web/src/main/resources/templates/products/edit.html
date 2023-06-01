@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Termék módosítás</title>
+    <link rel="icon"  th:src="@{/img/layout/megalloicon.jpg}" type="image/icon-x">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" th:href="@{/css/layout.css}"/>
+    <link rel="stylesheet" th:href="@{/css/products.css}"/>
+
+</head>
+<div class="container-fluid" id="megjelenites">
+
+
+    <div th:insert="~{shared/header :: header}"></div>
+
+    <div th:insert="~{shared/navBar :: navbar}"></div>
+
+<div class="body">
+
+    <h3>Termék módosítása</h3>
+
+    <div class="row">
+        <div class="col-md-4">
+            <form method="post"
+                  th:action="@{/products/edit}">
+                <div class="form-group">
+                    <label for="name">ID</label>
+                    <input type="text"
+                           id="id"
+                           name="id"
+                           readonly
+                           class="form-control"
+                           th:value="${product.id}"/>
+                </div>
+                <div class="form-group">
+                    <label for="name">Név</label>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           class="form-control"
+                           th:value="${product.name}"/>
+                </div>
+                <div class="form-group">
+                    <label for="valueOfNormal">Normál</label> <small>(Ft)</small>
+                    <input type="number"
+                           id="valueOfNormal"
+                           th:name="valueOfNormal"
+                           min="50"
+                           step="50"
+                           class="form-control"
+                           th:value="${product.valueOfNormal}"/>
+
+                </div>
+                <div class="form-group">
+                    <label for="valueOfBig">Nagy</label> <small>(Ft)</small>
+                    <input type="number"
+                           id="valueOfBig"
+                           th:name="valueOfBig"
+                           min="50"
+                           step="50"
+                           class="form-control"
+                           th:value="${product.valueOfBig}"/>
+                </div>
+                <div class="form-group">
+                    <label for="foodType">Besorolás típusa</label>
+                    <select id="foodType"
+                            name="foodType"
+                            class="form-control form-select">
+                        <option th:value="${T(hu.nye.progkor.restaurant.model.FoodType).PIZZA_FOOD}"
+                                th:text="Pizza"
+                                th:selected="${product.foodType} == ${T(hu.nye.progkor.restaurant.model.FoodType).PIZZA_FOOD} ? true : false">
+                        </option>
+                        <option th:value="${T(hu.nye.progkor.restaurant.model.FoodType).OTHER_FOOD}"
+                                th:text="Egyéb"
+                                th:selected="${product.foodType} == ${T(hu.nye.progkor.restaurant.model.FoodType).OTHER_FOOD} ? true : false">
+                        </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Leírás</label>
+                    <textarea id="description"
+                              name="description"
+                              rows="4"
+                              spellcheck="false"
+                              class="form-control"
+                              th:text="${product.description}"></textarea>
+                </div>
+                <button class="btn btn-primary"
+                        type="submit">Módosít
+                </button>
+                <a th:href="@{/products/products.html}"
+                   class="btn btn-secondary"
+                   type="submit">Mégsem</a>
+            </form>
+        </div>
+    </div>
+
+</div>
+    <div th:insert="~{shared/footer :: footer}"></div>
+
+</div>
+</body>
+</html>

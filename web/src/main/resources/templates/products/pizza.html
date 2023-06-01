@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Pizzák</title>
+    <link rel="icon"  th:src="@{/img/layout/megalloicon.jpg}" type="image/icon-x">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" th:href="@{/css/layout.css}"/>
+    <link rel="stylesheet" th:href="@{/css/menu.css}"/>
+
+</head>
+<body>
+<div class="container-fluid" id="megjelenites">
+
+<div th:insert="~{shared/header :: header}"></div>
+
+<div th:insert="~{shared/navBar :: navbar}"></div>
+
+<div class="body d-flex flex-column">
+    <table>
+        <thead>
+        <tr class="tableHeader">
+            <th colspan="2" class="product-name">
+                Pizzák
+            </th>
+            <th class="product-price">
+                32cm
+            </th>
+            <th class="product-price">
+                50cm
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="product: ${products}">
+            <td class="product-name">
+                <strong th:text="${product.name}">
+                </strong>
+            </td>
+            <td class="product-description">
+                <i th:text="${product.description}">
+                </i>
+            </td>
+            <td th:text="${product.valueOfNormal}" class="product-price">
+            </td>
+            <td th:text="${product.valueOfBig}" class="product-price">
+            </td>
+        </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+</div>
+
+<div th:insert="~{shared/footer :: footer}"></div>
+</div>
+</body>
+</html>

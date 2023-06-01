@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>restaurant</title>
+</head>
+<body>
+<!-- Navigation -->
+
+    <nav th:fragment="navbar"
+         class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="/">
+            Kezdőlap
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/products/pizza.html}">
+                        Pizza
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/products/others.html}">
+                        Gyros, Hamburger, Hot-Dog...
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/products/products.html}">
+                        Termékek
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</body>
+</html>

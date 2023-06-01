@@ -4,14 +4,72 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16f53c8b-fbc7-409c-a16f-8f40431f8d65" name="Changes" comment="CI / CD pipeline">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/feature.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" />
+    <list default="true" id="16f53c8b-fbc7-409c-a16f-8f40431f8d65" name="Changes" comment="CI / CD pipeline HIBAJAV">
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/hu/nye/progkor/restaurant/populator/DBPopulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/hu/nye/progkor/restaurant/populator/DBPopulatorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/hu/nye/progkor/restaurant/populator/impl/ProductInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/hu/nye/progkor/restaurant/converter/ProductDtoToEntityConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/hu/nye/progkor/restaurant/converter/ProductEntityToDtoConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/hu/nye/progkor/restaurant/model/dto/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/hu/nye/progkor/restaurant/model/exception/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/hu/nye/progkor/restaurant/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/hu/nye/progkor/restaurant/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/hu/nye/progkor/restaurant/RestaurantApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/hu/nye/progkor/restaurant/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/hu/nye/progkor/restaurant/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/hu/nye/progkor/restaurant/controller/handler/RestaurantExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/css/comments.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/css/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/css/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/css/menu_page/Mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/css/menu_page/Pc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/css/menu_page/PcSmall.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/css/menu_page/Tablet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/css/menu_page/TabletSmall.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/css/products.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/css/purge.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/js/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/img/home/gyros.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/img/home/gyros1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/img/home/gyros2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/img/home/hamburger.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/img/home/hamburger1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/img/home/hamburger2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/img/home/nyitvatartas3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/img/home/pizza.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/img/home/pizza1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/img/home/pizza2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/img/layout/angkor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/img/layout/hatter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/img/layout/megallo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/img/layout/megalloicon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/products/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/products/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/products/others.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/products/pizza.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/products/products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/shared/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/shared/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/shared/navBar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/hu/nye/progkor/restaurant/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/hu/nye/progkor/restaurant/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/hu/nye/progkor/restaurant/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/hu/nye/progkor/restaurant/repository/ProductRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <branch-grouping />
@@ -38,17 +96,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Egyetem/bsc/secondSem/Progkornyezet/restaurant&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Egyetem/bsc/secondSem/Progkornyezet/restaurant/web/src/main/resources/css",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Egyetem\bsc\secondSem\Progkornyezet\restaurant\web\src\main\resources\css" />
+      <recent name="D:\Egyetem\bsc\secondSem\Progkornyezet\restaurant\web\src\main\resources\templates\products" />
+      <recent name="D:\Egyetem\bsc\secondSem\Progkornyezet\restaurant\web\src\main\resources" />
+      <recent name="D:\Egyetem\bsc\secondSem\Progkornyezet\restaurant\web\src\main\resources\static\img" />
+      <recent name="D:\Egyetem\bsc\secondSem\Progkornyezet\restaurant\web\src\main\resources\templates\shared" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="angkorBuszBufe" />
@@ -87,7 +155,35 @@
       <option name="project" value="LOCAL" />
       <updated>1685554804622</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="CI / CD pipeline HIBAJAV">
+      <created>1685555218710</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685555218710</updated>
+    </task>
+    <task id="LOCAL-00004" summary="CI / CD pipeline HIBAJAV">
+      <created>1685555324955</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685555324955</updated>
+    </task>
+    <task id="LOCAL-00005" summary="CI / CD pipeline HIBAJAV">
+      <created>1685555392935</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685555392935</updated>
+    </task>
+    <task id="LOCAL-00006" summary="CI / CD pipeline HIBAJAV">
+      <created>1685555465409</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685555465409</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,7 +217,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Kezdő lépések&#10;- mappa struktúra és config fájlok beállítása / létrehozása" />
     <MESSAGE value="CI / CD pipeline" />
-    <option name="LAST_COMMIT_MESSAGE" value="CI / CD pipeline" />
+    <MESSAGE value="CI / CD pipeline HIBAJAV" />
+    <option name="LAST_COMMIT_MESSAGE" value="CI / CD pipeline HIBAJAV" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

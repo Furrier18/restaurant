@@ -9,6 +9,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 @AllArgsConstructor
@@ -18,6 +19,7 @@ import lombok.ToString;
 @EqualsAndHashCode
 @ToString
 @Entity
+@EnableJpaRepositories
 public class Product {
 
     @Id
@@ -37,7 +39,4 @@ public class Product {
 
     /** Leírás / miket tartalmaz */
     private String description;
-
-    /** Elérhető? (Ha igen akkor megjelenik a menüben) */
-    private Boolean isAvailable;
 }
