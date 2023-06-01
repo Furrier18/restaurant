@@ -30,4 +30,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: app
-          path: target/my-app.jar
+          path: target/web-0.1.0.jar
