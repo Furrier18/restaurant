@@ -237,7 +237,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685581061280</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="V 0.1.0 hibajav">
+      <created>1685581217644</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1685581217644</updated>
+    </task>
+    <task id="LOCAL-00023" summary="V 0.1.0 hibajav">
+      <created>1685581473523</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1685581473523</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
