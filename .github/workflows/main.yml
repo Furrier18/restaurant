@@ -35,7 +35,7 @@ jobs:
           mvn -B versions:set -DnewVersion="$version" --file pom.xml
           mvn -B deploy --file pom.xml
           echo ${version}
-          cp "web/target/web-${version}.jar" "restaurant/web/target/restaurant.jar"
+          cp "restaurant/web/target/web-${version}.jar" "web/target/restaurant.jar"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     outputs:
