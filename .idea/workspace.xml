@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16f53c8b-fbc7-409c-a16f-8f40431f8d65" name="Changes" comment="CI / CD pipeline - Artifactory" />
+    <list default="true" id="16f53c8b-fbc7-409c-a16f-8f40431f8d65" name="Changes" comment="CI / CD pipeline - Artifactory">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -290,7 +292,28 @@
       <option name="project" value="LOCAL" />
       <updated>1685801394814</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="CI / CD pipeline - Artifactory">
+      <created>1685801974909</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1685801974909</updated>
+    </task>
+    <task id="LOCAL-00031" summary="CI / CD pipeline - Artifactory">
+      <created>1685802067530</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1685802067530</updated>
+    </task>
+    <task id="LOCAL-00032" summary="CI / CD pipeline - Artifactory">
+      <created>1685802200978</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1685802200978</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
