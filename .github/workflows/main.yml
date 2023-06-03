@@ -26,15 +26,15 @@ jobs:
       - name: Build and publish with Maven
         run: |
           # Versioning setup
-          version_prefix=`mvn help:evaluate -Dexpression=project.version --quiet -DforceStdout --file restaurant/pom.xml | awk -F. '{print $1"."$2}'`
+          version_prefix=`mvn help:evaluate -Dexpression=project.version --quiet -DforceStdout --file pom.xml | awk -F. '{print $1"."$2}'`
           version="$version_prefix.${{github.run_number}}"
           echo "Setting artifact version to $version"
           # Push version to env
           echo "ARTIFACT_VERSION=$version" >> $GITHUB_ENV
           # Overwrite local artifact version
-          mvn -B versions:set -DnewVersion="$version" --file restaurant/pom.xml
-          mvn -B deploy --file restaurant/pom.xml
-          cp "restaurant/web/target/web-${version}.jar" "restaurant/web/target/restaurant.jar"
+          mvn -B versions:set -DnewVersion="$version" --file pom.xml
+          mvn -B deploy --file pom.xml
+          cp "web/target/web-${version}.jar" "restaurant/web/target/restaurant.jar"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     outputs:
