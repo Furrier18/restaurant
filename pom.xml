@@ -25,13 +25,13 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <commons-lang3.version>3.12.0</commons-lang3.version>
-        <spring-boot.version>2.6.3</spring-boot.version>
+        <commons-lang3.version>3.18.0</commons-lang3.version>
+        <spring-boot.version>3.3.7</spring-boot.version>
         <h2-db.version>1.4.200</h2-db.version>
         <lombok.version>1.18.22</lombok.version>
         <webjars.version>5.1.3</webjars.version>
         <jquery.version>3.6.0</jquery.version>
-        <webjars-locator.version>0.42</webjars-locator.version>
+        <webjars-locator.version>0.43</webjars-locator.version>
         <jacoco.version>0.8.7</jacoco.version>
         <coverage.branchLimit>80%</coverage.branchLimit>
         <coverage.lineLimit>80%</coverage.lineLimit>
